@@ -1,28 +1,39 @@
-var bakeryLabels = ["Crossiants","Baguettes"];
-
 setup = function() {
-
-  size(400, 400); 
-  background(0,0,0,0);
-
-  var crossiantX = 60;
-  textSize(30);
-
-  while(crossiantX < 300){
-    text("🥐", crossiantX, 85);
-    crossiantX += 40;
-  }
-
-  textSize(15);
-  text(bakeryLabels[0], 70, 105);
-  text(bakeryLabels[1], 70, 185);
+//stripped background
+background(112,83,53);
+stroke(234,230,202);
+//for(star;howlong;change)
+for(var x=0; x<300; x+=20){
+  line(0,x,300,x);
 }
-
-draw = function(){   
-
+//draws uwu
+for (var i=55; i<250; i+=20){
+  text('uwu',50,i);
 }
+//draws sybau
+var x=0;
+while(x<350)
+text("sybau",x,240);
 
-
-mouseClicked = function(){
+};
 
 }
+//draws sybau
+var x=0;
+while (x<350){
+  text("sybau",x,240);
+  x+=20;
+
+var myCute =["Abbie","Hanna","Daz","Miss.Sobala"];
+text(myCute[0],10,30);
+text(myCute[1],10,80);
+text(myCute[2],10,130);
+text(myCute[3],10,180);
+
+
+textSize(25);
+text("These are " + myCute.length + " cuties",10,300);
+
+
+
+
